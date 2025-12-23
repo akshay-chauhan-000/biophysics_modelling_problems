@@ -27,10 +27,10 @@ We compute and compare:
 ### 1D Lattice Random Walk
 
 At each discrete time step, a particle moves:
-- Right by \( +1 \) with probability \( p \)
-- Left by \( -1 \) with probability \( q = 1 - p \)
+- Right by $\( +1 \)$ with probability $\( p \)$
+- Left by $\( -1 \)$ with probability $\( q = 1 - p \)$
 
-Let \( x_N \) be the position after \( N \) steps.
+Let $\( x_N \)$ be the position after $\( N \)$ steps.
 
 ---
 
@@ -38,19 +38,13 @@ Let \( x_N \) be the position after \( N \) steps.
 
 ### Mean Displacement
 
-The expected displacement after \( N \) steps is
-
-\[
-\langle x_N \rangle = (p - q) N = (2p - 1)N
-\]
+The expected displacement after $\( N \)$ steps is $\[\langle x_N \rangle = (p - q) N = (2p - 1)N\]$
 
 ---
 
-### Unbiased Random Walk (\( p = 0.5 \))
+### Unbiased Random Walk $(\( p = 0.5 \))$
 
-\[
-\langle x_N \rangle = 0
-\]
+$\[\langle x_N \rangle = 0\]$
 
 - No preferred direction
 - No drift
@@ -58,13 +52,9 @@ The expected displacement after \( N \) steps is
 
 ---
 
-### Biased Random Walk (\( p \neq 0.5 \))
+### Biased Random Walk $(\( p \neq 0.5 \))$
 
-\[
-\langle x_N \rangle = v N
-\quad \text{with} \quad
-v = 2p - 1
-\]
+$\[\langle x_N \rangle = v N\quad \text{with} \quadv = 2p - 1\]$
 
 - Symmetry is broken
 - A finite **drift velocity** emerges
@@ -93,9 +83,7 @@ The notebook visualizes:
 - **Biased walk**:  
   Mean position grows linearly with time.  
   The slope of the curve gives the drift velocity:
-  \[
-  v_{\text{sim}} \approx v_{\text{theory}} = 2p - 1
-  \]
+  $\[  v_{\text{sim}} \approx v_{\text{theory}} = 2p - 1  \]$
 
 The simulation and analytical curves show excellent agreement, validating the theoretical description.
 
